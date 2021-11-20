@@ -24,7 +24,7 @@ body {
   align-items: center;
 }
 
-.head-background {
+.head-overlay {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -341,7 +341,7 @@ body {
   color: #ffffff;
 }
 
-.head-text {
+.head-overlay__text {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -428,21 +428,39 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-.services-list {
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+/* .services-list {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-left: 0px;
   padding: 0px;
-}
+} */
 
 .services-label {
   position: relative;
   overflow: hidden;
   background-color: rgba(47, 48, 58, 0.8);
 }
-.services-label > .services-label-text {
+
+.card-list__label {
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.card-list__label > .card-list__text {
   text-transform: uppercase;
   font-family: "Roboto";
   font-weight: bold;
@@ -461,7 +479,7 @@ body {
   align-items: center;
 }
 
-.social-list-list {
+.social-links {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -472,7 +490,7 @@ body {
   height: 56px;
 }
 
-.social-list-link {
+.social-links__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -486,8 +504,8 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list-link:hover,
-.social-list-link:focus {
+.social-links__link:hover,
+.social-links__link:focus {
   fill: #ffffff;
   background-color: #2196f3;
 }
@@ -497,12 +515,12 @@ body {
   height: 20px;
 }
 
-.service {
+/* .service {
   margin: 0;
   padding: 0px;
-}
+} */
 
-.member {
+.figcaption__member {
   width: 72px;
   height: 19px;
   margin-bottom: 10px;
@@ -522,7 +540,7 @@ body {
   padding: 0%;
 }
 
-.function {
+.figcaption__function {
   width: 147px;
   height: 19px;
   margin: 0%;
@@ -541,7 +559,7 @@ body {
   justify-content: space-between;
 }
 
-.card {
+.card__item--figure {
   margin: 0;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -654,20 +672,30 @@ body {
   color: #2196f3;
 }
 
-.client-list {
+.card-list--client {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px;
-  margin-top: 50px;
+  margin-top: 0px;
 }
+
+.card-list{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  margin-top: 0px;
+}
+
 .client-icon {
   width: 106px;
   height: 60px;
 }
 
-.client-list-link {
+.card-list__item--client {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -682,8 +710,24 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-list-link:focus,
-.client-list-link:hover {
+.card-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  fill: #afb1b8;
+
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.card-list__link:focus,
+.card-list__link:hover {
   border: 1px solid #2196f3;
   fill: #2196f3;
 }
@@ -845,6 +889,37 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 0;
+  margin: auto;
+  cursor: pointer;
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.button__text {
+  width: 200px;
+  height: 50px;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.button--newsletter {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 0;
   margin-right: 0;
   margin-bottom: 0;
   float: right;
@@ -854,13 +929,13 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button:focus,
-.button:hover {
+.button--newsletter:focus,
+.button--newsletter:hover {
   background-color: #98c6eb;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.button__text {
+.button__text--newsletter {
   width: 85px;
   height: 30px;
   font-family: "Roboto";
