@@ -18,7 +18,7 @@ body {
   background-color: #ffffff;
   height: 80px;
 }
-.header-content {
+.menu-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,10 +53,11 @@ body {
   padding-bottom: 94px;
 }
 
-.menu {
-  display: inline-block;
+.menu-nav {
+  
 }
-.menu__list {
+.menu-nav__list {
+  display: inline-block;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -67,9 +68,7 @@ body {
   margin-left: 93px;
   margin-right: 345px;
 }
-
-.menu-item-portfolio,
-.menu-item-agencja,
+.menu-item-mark,
 .menu-item {
   display: block;
   text-decoration: none;
@@ -95,13 +94,22 @@ body {
   color: #2196f3;
 }
 
-.menu-item-portfolio,
-.menu-item-agencja {
+.menu-item-mark {
   color: #2196f3;
+  display: block;
+  text-decoration: none;
+  width: 53px;
+  height: 16px;
+  position: relative;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
-.menu-item-portfolio::after,
-.menu-item-agencja::after {
+
+.menu-item-mark::after {
   content: "";
   display: block;
   width: 53px;
@@ -188,7 +196,7 @@ body {
   fill: #2196f3;
 }
 
-.webstudio-link {
+.logo {
   display: flex;
   justify-content: center;
   width: 145px;
@@ -204,11 +212,11 @@ body {
   letter-spacing: 0.03em;
 }
 
-.web-link {
+.logo--webtext {
   color: #2196f3;
 }
 
-.studio-link {
+.logo--linktext {
   color: #212121;
   margin-left: -1px;
 }
