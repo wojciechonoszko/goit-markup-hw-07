@@ -159,12 +159,12 @@ body {
   fill: #2196f3;
 }
 
-.head-email-icon {
+.email__icon {
   width: 16px;
   height: 12px;
 }
 
-.head-phone-icon {
+.phone__icon {
   width: 10px;
   height: auto;
 }
@@ -221,7 +221,7 @@ body {
   margin-left: -1px;
 }
 
-.studio-link-footer {
+.footer-logo--linktext {
   color: #ffffff;
   margin-left: -1px;
 }
@@ -281,40 +281,50 @@ body {
   background-color: #2f303a;
   height: 252px;
 }
-.footer-email {
+.footer-contact__email {
   width: 231px;
   height: 21px;
+  
+  margin: 0px;
+  margin-top: 9px;
+
+  letter-spacing: 0.03em;
+
+  
+}
+
+.footer-contact__email--text {
   text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71em;
-  margin: 0px;
-  margin-top: 9px;
-
-  letter-spacing: 0.03em;
-
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-phone {
+.footer-contact__phone {
   width: 231px;
   height: 21px;
+  
+  margin: 0px;
+  margin-top: 9px;
+
+  
+}
+
+.footer-contact__phone--text{
   text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71em;
-  margin: 0px;
-  margin-top: 9px;
-
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
 }
-.address-text {
+.footer-contact__address {
   width: 247px;
   height: 21px;
 
@@ -674,7 +684,7 @@ body {
   fill: #2196f3;
 }
 
-.footer-social-media-container {
+.footer-social {
   display: block;
 
   width: 206px;
@@ -684,7 +694,7 @@ body {
   margin-top: 72px;
 }
 
-.footer-social-media-list {
+.footer-social__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -694,12 +704,12 @@ body {
   height: 44px;
   list-style-type: none;
 }
-.footer-social-icon {
+.footer-social__icon {
   width: 20px;
   height: 20px;
 }
 
-.footer-social-list-link {
+.footer-social__list_item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -714,13 +724,13 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-list-link:hover,
-.footer-social-list-link:focus {
+.footer-social__list_item:hover,
+.footer-social__list-item:focus {
   background-color: #2196f3;
   cursor: url(./images/finger-black.png);
 }
 
-.footer-address-container {
+.footer-address {
   display: flex;
   flex-direction: column;
   column-gap: 10px;
@@ -732,15 +742,21 @@ body {
   padding: 0px;
 }
 
-.footer-data {
+.footer-contact {
   width: 247px;
   height: 132px;
   display: block;
+  justify-content: space-between;
+  align-items: center;
   float: left;
+  margin: 0px;
   margin-top: 60px;
+  column-gap: 10px;
+  
+  padding: 0px;
 }
 
-.footer-social-media-text {
+.footer-social__title {
   margin: 0px;
   margin-bottom: 20px;
   font-family: Roboto;
