@@ -226,6 +226,10 @@ body {
   margin-left: -1px;
 }
 
+.footer-logo--webtext {
+  color:#2196f3
+}
+
 .btn-group {
   display: flex;
   justify-content: center;
@@ -784,21 +788,22 @@ body {
   background-color: #f5f4fa;
 }
 
-.footer-newsletter {
+.form-newsletter {
   float: right;
   display: block;
   width: 570px;
   height: 86px;
   margin-right: 0px;
   margin-top: 72px;
+  
 }
 
-.footer-newsletter-title {
-  width: 210px;
-  height: 16px;
+.form-newsletter__label {
+  display: block;
   text-transform: uppercase;
   margin-top: 0;
   margin-left: 0;
+  margin-bottom: 20px;
   padding: 0;
 
   font-family: "Roboto";
@@ -808,9 +813,10 @@ body {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-.footer-newsletter-input {
+.form-newsletter__input {
   width: 358px;
   height: 50px;
+  
   margin-left: 0;
   margin-bottom: 0;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -825,11 +831,11 @@ body {
   padding: 15px;
 }
 
-.footer-newsletter-input:focus-within{
+.form-newsletter__input:focus-within{
   outline:none;
 }
 
-.footer-newsletter-button {
+.button {
   width: 200px;
   height: 50px;
   display: flex;
@@ -848,13 +854,13 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-newsletter-button:focus,
-.footer-newsletter-button:hover {
+.button:focus,
+.button:hover {
   background-color: #98c6eb;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.footer-newsletter-button-text {
+.button__text {
   width: 85px;
   height: 30px;
   font-family: "Roboto";
@@ -866,7 +872,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.icon-icon-send {
+.button__icon {
   width: 24px;
   height: 24px;
   fill: #ffffff;

@@ -28,8 +28,8 @@
         <div class="container">
           <nav class="menu-nav">
             <a href="/WebStudio/" class="logo">
-              <span class="logo--webtext">Web</span>
-              <span class="logo--linktext">Studio</span>
+              <span class="logo logo--webtext">Web</span>
+              <span class="logo logo--linktext">Studio</span>
             </a>
             <ul class="menu-nav__list">
               <li class="menu-nav__item">
@@ -391,18 +391,24 @@
       <div class="container">
         <div class="footer-contact">
           <a href="/WebStudio/" class="footer-logo">
-            <span class=".logo--webtext">Web</span>
-            <span class="footer-logo--linktext">Studio</span>
+            <span class="footer-logo footer-logo--webtext">Web</span>
+            <span class="footer-logo footer-logo--linktext">Studio</span>
           </a>
 
-          <p class="footer-contact__address">m. Warszawa, Aleje Jerozolimskie 21</p>
+          <p class="footer-contact__address">
+            m. Warszawa, Aleje Jerozolimskie 21
+          </p>
           <p class="footer-contact__email">
-            <a href="mailto:info@devstudio.com" class="footer-contact__email--text"
+            <a
+              href="mailto:info@devstudio.com"
+              class="footer-contact__email footer-contact__email--text"
               >info@devstudio.com</a
             >
           </p>
           <p class="footer-contact__phone">
-            <a href="tel:+48111111111" class="footer-contact__phone--text">+48 111 111 111</a>
+            <a href="tel:+48111111111" class="footer-contact__phone footer-contact__phone--text"
+              >+48 111 111 111</a
+            >
           </p>
         </div>
         <div class="footer-social">
@@ -438,26 +444,32 @@
             </li>
           </ul>
         </div>
-        <div class="footer-newsletter">
-          <form name="signup_form" autocomplete="on" novalidate>
-            <label class="footer-newsletter-label" for="footer-newsletter">
-              <p class="footer-newsletter-title">zapisz się do newslettera</p>
-              <input
-                class="footer-newsletter-input"
-                id="footer-newsletter"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-              />
-            </label>
-            <button class="footer-newsletter-button" type="submit">
-              <p class="footer-newsletter-button-text">Zapisz się</p>
-              <svg class="icon-icon-send">
-                <use href="./images/icons.svg#icon-icon-send"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
+
+        <form
+          class="form-newsletter"
+          name="signup_form"
+          autocomplete="on"
+          novalidate
+        >
+          <label class="form-newsletter__label" for="footer-newsletter">
+            zapisz się do newslettera
+          </label>
+          
+          <input
+            class="form-newsletter__input"
+            id="footer-newsletter"
+            type="email"
+            name="email"
+            placeholder="E-mail"
+          />
+
+          <button class="button" type="submit">
+            <p class="button__text">Zapisz się</p>
+            <svg class="button__icon">
+              <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
 
