@@ -260,7 +260,7 @@ body {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.63em;
+  line-height: 1.62em;
   letter-spacing: 0.03em;
 
   transition-property: background-color, box-shadow;
@@ -269,14 +269,15 @@ body {
   
 }
 
+
 .button-group__item:hover,
 .button-group__item:focus {
-  
+  color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.name {
+.portfolio-cards__figcaption_name {
   width: 322px;
   height: 36px;
   margin: 0px;
@@ -288,7 +289,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.describe {
+.portfolio-cards__figcaption_describe {
   width: 322px;
   height: 30px;
   margin-top: 4px;
@@ -604,7 +605,7 @@ body {
 
   letter-spacing: 0.03em;
 }
-.img-portfolio-card {
+.portfolio-cards__img {
   display: flex;
   width: 370px;
   height: 294px;
@@ -614,7 +615,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.caption {
+.portfolio-cards__overlay {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -635,7 +636,7 @@ body {
   border-color: #ffffff;
 }
 
-.caption > p {
+.portfolio-cards__overlay > p {
   width: 301px;
   height: 196px;
   font-family: "Roboto";
@@ -647,7 +648,7 @@ body {
   margin: 0px;
   padding: 0px;
 }
-.portfolio-card:hover .caption {
+.portfolio-cards__figure:hover .portfolio-cards__overlay {
   transform: translatey(0);
 }
 .portfolio-cards {
@@ -657,7 +658,7 @@ body {
   margin-top: auto;
 }
 
-.portfolio-card {
+.portfolio-cards__figure {
   width: 370px;
   height: 404px;
   margin-left: 0px;
@@ -668,12 +669,12 @@ body {
   transition-property: box-shadow;
 }
 
-.portfolio-card:hover {
+.portfolio-cards__figure:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-figcaption {
+.portfolio-cards__figcaption {
   display: flex;
   flex-direction: column;
   margin: 20px 24px 20px 24px;
