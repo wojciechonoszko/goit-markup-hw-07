@@ -1,0 +1,19 @@
+.services-label {
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.icon {
+  display: inline-block;
+  color: black;
+  width: 16px;
+  height: 12px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon:hover {
+  color: #2196f3;
+}
