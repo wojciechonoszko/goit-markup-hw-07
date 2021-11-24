@@ -1,167 +1,118 @@
 .button {
-    width: 200px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #2196f3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    padding: 0;
-    margin: auto;
-    cursor: pointer;
-  
-    transition-property: background-color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
-  }
-  
-  .button__text {
-    width: 200px;
-    height: 50px;
-    font-family: "Roboto";
-    font-weight: bold;
-    font-size: 16px;
-    letter-spacing: 0.06em;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 0;
+  margin: auto;
+  cursor: pointer;
 
-  .form__button_container {
-    position: absolute;
-    width: 448px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    bottom: 40px;
-  }
-  .form__button {
-    width: 200px;
-    height: 50px;
-    background-color: #2196f3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    cursor: pointer;
-    color: #ffffff;
-    letter-spacing: 0.06em;
-    font-size: 16px;
-    line-height: 1.87em;
-    font-weight: bold;
-    font-family: "Roboto";
-    transition-property: background-color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .form__button:hover,
-  .form__button:focus {
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
     background-color: #98c6eb;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
-  
-  .button--newsletter {
-    width: 200px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #2196f3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    padding: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    float: right;
-    cursor: pointer;
-    transition-property: background-color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .button--newsletter:focus,
-  .button--newsletter:hover {
-    background-color: #98c6eb;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
-  .button__text--newsletter {
-    width: 85px;
-    height: 30px;
-    font-family: "Roboto";
-    font-weight: bold;
-    font-size: 16px;
-    letter-spacing: 0.06em;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .button__icon {
-    width: 24px;
-    height: 24px;
-    fill: #ffffff;
-    margin-left: 24px;
-  }
-
-.button:hover,
-.button:focus {
-  background-color: #98c6eb;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.button-group {
-    height: 54px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-  }
-  
-  .button-group__item {
-    border: none;
-    width: 120px;
-    height: 38px;
-    border-radius: 4px;
-    background-color: #f5f4fa;
-    cursor: pointer;
-    margin-left: 8px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-  
-    transition-property: background-color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-  }
-  
-  .button-group__text {
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62em;
-    letter-spacing: 0.03em;
-  
-    transition-property: background-color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-  }
-  
-  
-  .button-group__item:hover,
-  .button-group__item:focus {
-    color: #ffffff;
-    background-color: #2196f3;
+.button__text {
+  width: 200px;
+  height: 50px;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__button_container {
+  position: absolute;
+  width: 448px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  bottom: 40px;
+}
+.form__button {
+  width: 200px;
+  height: 50px;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ffffff;
+  letter-spacing: 0.06em;
+  font-size: 16px;
+  line-height: 1.87em;
+  font-weight: bold;
+  font-family: "Roboto";
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #98c6eb;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
-  
+}
+
+.button--newsletter {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  float: right;
+  cursor: pointer;
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background-color: #98c6eb;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.button__text--newsletter {
+  width: 85px;
+  height: 30px;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button__icon {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  margin-left: 24px;
+}
+

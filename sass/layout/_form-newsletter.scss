@@ -39,8 +39,10 @@
     align-items: center;
     letter-spacing: 0.03em;
     padding: 15px;
+  
+    &:focus-within{
+      outline:none;
+    }
   }
   
-  .form-newsletter__input:focus-within{
-    outline:none;
-  }
+  
