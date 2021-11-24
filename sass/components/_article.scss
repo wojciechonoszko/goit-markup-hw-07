@@ -20,7 +20,7 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
   
-    color: #757575;
+    color: $color-describe;
     margin: 0;
   }
 
@@ -34,7 +34,7 @@
   .article__icon {
     width: 70px;
     height: 70px;
-    fill: #2196f3;
+    fill: $color-fill;
   }
   
   .article__icon_container {
@@ -45,5 +45,5 @@
     height: 120px;
     border-radius: 4px;
   
-    background-color: #f5f4fa;
+    background-color: $color-article-icon-background;
   }
