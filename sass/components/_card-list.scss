@@ -59,11 +59,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-      border: 1px solid $color-fill;
-      fill: $color-fill;
-  }
+
 }
 
 .card-list__link {
@@ -82,8 +78,8 @@
 
   &:hover,
   &:focus {
-      border: 1px solid blue;
-      fill: blue;
+      border: 1px solid $color-fill;
+      fill: $color-fill;
     }
 }
 
